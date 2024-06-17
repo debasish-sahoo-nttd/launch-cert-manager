@@ -1,0 +1,14 @@
+# Default values for launch-cert-manager.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+cert-manager:
+  enabled: true
+  # Cannot make to work with installCRDs: true in a subchart
+  installCRDs: false
+  replicaCount: 1
+  logLevel: 2
+  extraArgs: []
+  # Must be set to the current namespace while using any namespace other than cert-manager
+  clusterResourceNamespace: ""
+
+

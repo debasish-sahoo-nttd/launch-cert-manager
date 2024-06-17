@@ -1,0 +1,8 @@
+*.tgz
+.DS_Store
+.idea
+.vscode
+*.pem
+*.crt
+*.cer
+*.pfx
